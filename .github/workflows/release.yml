@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
         matrix: 
-            node-version: [16,18,20,22,latest,node]
-            os: [ubuntu-latest, ubuntu-22.04, windows-latest, macos-latest]
+            node-version: [20,latest]
+            os: [ubuntu-latest, macos-latest]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
