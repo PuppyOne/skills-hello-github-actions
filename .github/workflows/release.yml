@@ -37,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Publish to NPM
-        run: echo "Releasing ${{ NODE_AUTH_TOKEN }}"
+        run: echo "Releasing ${{ env.NODE_AUTH_TOKEN }}"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_FAKE_TOKEN }}
 
